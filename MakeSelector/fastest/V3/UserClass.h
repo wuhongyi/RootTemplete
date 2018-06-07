@@ -4,9 +4,9 @@
 // Author: Hongyi Wu(吴鸿毅)
 // Email: wuhongyi@qq.com 
 // Created: 二 6月  5 03:59:43 2018 (+0800)
-// Last-Updated: 二 6月  5 04:38:46 2018 (+0800)
+// Last-Updated: 四 6月  7 03:11:05 2018 (+0800)
 //           By: Hongyi Wu(吴鸿毅)
-//     Update #: 11
+//     Update #: 13
 // URL: http://wuhongyi.cn 
 
 #ifndef _USERCLASS_H_
@@ -102,6 +102,7 @@
 #include <vector>
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+/* class DataClass; */
 
 class UserClass : public DataClass
 {

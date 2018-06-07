@@ -4,9 +4,9 @@
 // Author: Hongyi Wu(吴鸿毅)
 // Email: wuhongyi@qq.com 
 // Created: 日 7月  5 09:31:13 2015 (+0800)
-// Last-Updated: 二 6月  5 04:41:38 2018 (+0800)
+// Last-Updated: 四 6月  7 05:13:58 2018 (+0800)
 //           By: Hongyi Wu(吴鸿毅)
-//     Update #: 96
+//     Update #: 107
 // URL: http://wuhongyi.cn 
 
 #include <unistd.h>//要求6.00.00及以上才能被调用
@@ -69,6 +69,8 @@ void process()
        else if (type == 1)   {
 	 // use AClic  add a + at the end
 	 MacroUserClass += "+";
+	 // gSystem->CompileMacro("DataClass.C","kfc");
+	 // gSystem->Load("DataClass_C");
 	 chain->Process(MacroUserClass);
        }
        else if (type == 2) {//预留其它执行,比如传递option
