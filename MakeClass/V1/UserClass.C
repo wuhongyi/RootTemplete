@@ -4,9 +4,9 @@
 // Author: Hongyi Wu(吴鸿毅)
 // Email: wuhongyi@qq.com 
 // Created: 四 6月  7 09:42:33 2018 (+0800)
-// Last-Updated: 四 6月  7 10:08:37 2018 (+0800)
+// Last-Updated: 四 8月  2 01:35:54 2018 (+0800)
 //           By: Hongyi Wu(吴鸿毅)
-//     Update #: 7
+//     Update #: 8
 // URL: http://wuhongyi.cn 
 
 #define UserClass_cxx
@@ -16,9 +16,10 @@
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-UserClass::UserClass(TTree *tree)
+UserClass::UserClass(TTree *tree,int flag)
   :DataClass(tree)
 {
+  ExternalFlag = flag;
   Init(tree);
   //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
   
