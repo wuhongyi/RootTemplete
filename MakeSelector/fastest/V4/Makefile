@@ -1,11 +1,11 @@
 OBJ = wu
 
 CXX=g++        
-CXXFLAGS:=-std=c++11 -g -Wall -lrt  -I. 
-ROOTLIBS = $(shell root-config --libs) -lGui
+CXXFLAGS:= -g -Wall -I. 
+ROOTLIBS = $(shell root-config --libs) -lGui 
 ROOTINC = -I$(shell root-config --incdir) 
 CXXFLAGS+=$(ROOTINC)
-LIBS:=
+LIBS:= -lrt
 
 
 
@@ -19,7 +19,7 @@ all: $(OBJ)
 
 
 $(OBJ): $(SRCS) $(OBJECTS) $(INCLUDES)
-	$(CXX) -o  $@  $(OBJECTS) $(CXXFLAGS) $(LIBS) $(ROOTLIBS)
+	$(CXX) $(CXXFLAGS)  -o  $@  $(OBJECTS) $(LIBS) $(ROOTLIBS)
 
 %.o: %.cxx 
 	$(CXX) $(CXXFLAGS) -c $< 
